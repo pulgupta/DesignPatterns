@@ -37,6 +37,7 @@ public class SingeltonApproach2{
 		return ref;
 	}
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws CloneNotSupportedException  {
 		try {
 			SingeltonApproach2 sa = new SingeltonApproach2();

@@ -6,6 +6,7 @@ public class FinalizerPattern {
 	//The purpose of this class is to contain the finalize logic
 	//When the gurdian is finalized it performs finalization activity
 	//desired for the enclosing class
+	@SuppressWarnings("unused")
 	private final Object finalizerGurdian = new Object() {
 		@Override
 		protected void finalize() throws Throwable
