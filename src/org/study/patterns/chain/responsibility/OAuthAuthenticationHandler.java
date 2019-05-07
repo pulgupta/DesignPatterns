@@ -8,6 +8,13 @@ public class OAuthAuthenticationHandler extends AuthenticationHandler {
 
 	@Override
 	boolean isAuthenticated(AuthenticationProvider authProvider) {
+		System.out.println("In OAuth Handler");
+		if(authProvider instanceof OAuthTokenProvider) {
+			System.out.println("Returning true from OAuth");
+			return true;	
+		}
+		else if (this.nextHandler != null)
+			return this.nextHandler.isAuthenticated(authProvider);
 		return false;
 	}
 
