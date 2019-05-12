@@ -2,8 +2,8 @@ package org.study.patterns.visitor;
 
 public class VisitorPatternTester {
 	public static void main(String[] args) {
-		Elements e1 = new Element1();
-		Elements e2 = new Element2();
+		Element e1 = new Element1();
+		Element e2 = new Element2();
 		Visitor v = new ConcreteVisitor();
 		e1.accept(v);
 		e2.accept(v);

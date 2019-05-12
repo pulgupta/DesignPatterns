@@ -1,6 +1,6 @@
 package org.study.patterns.visitor;
 
-public class Element2 implements Elements {
+public class Element2 implements Element {
 
 	@Override
 	public void accept(Visitor visitor) {

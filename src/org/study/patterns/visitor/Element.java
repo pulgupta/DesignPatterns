@@ -1,5 +1,5 @@
 package org.study.patterns.visitor;
 
-public interface Elements {
+public interface Element {
 	void accept(Visitor visitor);
 }
