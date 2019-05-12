@@ -1,5 +1,10 @@
 package org.study.patterns.strategy;
 
+/**
+ * Context class
+ * @author pulgupta
+ *
+ */
 public class Apple {
 
 	int weight;

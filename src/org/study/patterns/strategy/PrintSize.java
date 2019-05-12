@@ -1,5 +1,10 @@
 package org.study.patterns.strategy;
 
+/**
+ * Different strategies
+ * @author pulgupta
+ *
+ */
 public class PrintSize implements PrettyPrintApple {
 
 	@Override
