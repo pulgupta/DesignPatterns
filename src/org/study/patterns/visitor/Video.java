@@ -1,13 +1,13 @@
 package org.study.patterns.visitor;
 
-public class Element2 implements Element {
+public class Video implements Element {
 
 	// element state variables
 	
 	// Other methods 
 	
 	@Override
-	public void accept(Visitor visitor) {
+	public void compress(Visitor visitor) {
 		visitor.visit(this);
 	}
 

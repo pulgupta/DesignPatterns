@@ -1,14 +1,14 @@
 package org.study.patterns.visitor;
 
-public class ConcreteVisitor implements Visitor {
+public class MpegCompression implements Visitor {
 
 	@Override
-	public void visit(Element1 e) {
+	public void visit(Audio e) {
 		System.out.println("This is inside the element 1 method of class " + this.toString());
 	}
 
 	@Override
-	public void visit(Element2 e) {
+	public void visit(Video e) {
 		System.out.println("This is inside the element 2 method of class " + this.toString());
 	}
 

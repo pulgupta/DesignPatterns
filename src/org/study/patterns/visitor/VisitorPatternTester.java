@@ -11,18 +11,18 @@ package org.study.patterns.visitor;
  */
 public class VisitorPatternTester {
 	public static void main(String[] args) {
-		Element e1 = new Element1();
-		Element e2 = new Element2();
-		Visitor v = new ConcreteVisitor();
-		e1.accept(v);
-		e2.accept(v);
+		Element e1 = new Audio();
+		Element e2 = new Video();
+		Visitor v = new MpegCompression();
+		e1.compress(v);
+		e2.compress(v);
 		
 		System.out.println("Lets see if we can extend the functionality");
 		System.out.println("If you will see we are just changing the visitor");
 		
-		Visitor v2 = new ConcreteVisitor2();
-		e1.accept(v2);
-		e2.accept(v2);
+		Visitor v2 = new AviCompression();
+		e1.compress(v2);
+		e2.compress(v2);
 		
 		
 	}

@@ -8,6 +8,6 @@ public interface Visitor {
 		// to access the complete state of "Element" to make our visitor equivalent
 		// to a method within the Element class
 	
-	void visit(Element1 e);
-	void visit(Element2 e);
+	void visit(Audio e);
+	void visit(Video e);
 }
