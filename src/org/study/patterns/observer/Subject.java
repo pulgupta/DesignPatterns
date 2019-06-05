@@ -17,7 +17,7 @@ public class Subject {
 		updateAll();
 	}
 	
-	public void setObserver(Observer observer) {
+	public void addObserver(Observer observer) {
 		observers.add(observer);
 	}
 	

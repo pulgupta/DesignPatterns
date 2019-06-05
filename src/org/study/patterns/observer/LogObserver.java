@@ -9,7 +9,7 @@ public class LogObserver extends Observer{
 
 	public LogObserver(Subject subject) {
 		this.subject = subject;
-		this.subject.setObserver(this);
+		this.subject.addObserver(this);
 	}
 	
 	@Override

@@ -10,7 +10,7 @@ public class MailObserver extends Observer{
 
 	public MailObserver(Subject subject) {
 		this.subject = subject;
-		this.subject.setObserver(this);
+		this.subject.addObserver(this);
 	}
 	
 	@Override
