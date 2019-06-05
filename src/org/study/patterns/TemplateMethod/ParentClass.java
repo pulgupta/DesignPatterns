@@ -1,12 +1,12 @@
 package org.study.patterns.TemplateMethod;
 
-public interface ParentClass {
+public abstract class ParentClass {
 
-    default void templateMethod() {
+    final void templateMethod() {
         // We are performing some invariants
         System.out.println("This is parent body");
         overriddenMethod();
     }
 
-    void overriddenMethod();
+    abstract void overriddenMethod();
 }
