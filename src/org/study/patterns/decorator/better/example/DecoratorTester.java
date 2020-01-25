@@ -24,6 +24,9 @@ public class DecoratorTester {
         // If you see below our sports car now have leather seats even though we do not have a single
         // implementation of Car interface with all the features of luxury and sports car.
         Car sportsLuxuryCar = sc;
+
+        // Now if you will see then this assemble will call the sports car assemble which calls the luxury car assemble which
+        // calls the base car assembl
         sportsLuxuryCar.assemble();
     }
 }

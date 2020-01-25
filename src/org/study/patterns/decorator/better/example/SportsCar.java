@@ -11,6 +11,8 @@ public class SportsCar extends CarDecorator {
 
 	@Override
 	public void assemble() {
+		// When we are assembling this car we will also have to assemble the base car
+		// Thus we are first assembling that and then will add the features of the Sports car.
 		car.assemble();
 		System.out.println("adding the features of sports car");
 		System.out.println("Specs : ");
