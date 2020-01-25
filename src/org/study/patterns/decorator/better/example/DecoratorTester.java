@@ -15,7 +15,9 @@ public class DecoratorTester {
 
         LuxuryCar lc = new LuxuryCar(bc);
         lc.setLeatherMake("premium");
-
+        // The basic idea of using these decorators is that we can now mix and match multiple combinations 
+	// If you see below our sports car now have leather seats even though we do not have a single
+	// implementation of Car interface with all the features of luxury and sports car.
         SportsCar sc = new SportsCar(lc);
         sc.setDrivingModes(4);
         sc.setPeakTorqueMods(2);
