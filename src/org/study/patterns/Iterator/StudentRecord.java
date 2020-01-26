@@ -10,6 +10,8 @@ import java.util.List;
     preventing leaking the reference.
     We can still remove the elements using iterator.remove() but still it is certainly better
     than the approach of returning the list.
+
+    Also see no getStudents() methods so that is definitely better
  */
 public class StudentRecord implements Iterable<Student> {
 
