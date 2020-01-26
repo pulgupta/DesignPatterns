@@ -1,5 +1,6 @@
 package org.study.patterns.Iterator;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -12,6 +13,12 @@ import java.util.List;
     than the approach of returning the list.
 
     Also see no getStudents() methods so that is definitely better
+    A better approach than iterator will be returning copies of your collection but that will certainly result
+    in a performance dip
+
+    public List<Student> getStudents() {
+        return new ArrayList<>(students);
+    }
  */
 public class StudentRecord implements Iterable<Student> {
 
