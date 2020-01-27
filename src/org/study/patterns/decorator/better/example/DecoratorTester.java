@@ -16,6 +16,9 @@ public class DecoratorTester {
         LuxuryCar lc = new LuxuryCar(bc);
         lc.setLeatherMake("premium");
 
+        // Also you can see that we are not using the reference type here.
+        // Ideally if we have a behaviour that is common to all the decorators then we can use the interface
+        // as the reference type here but if not then we can freely go ahead with the concrete type as well.
         SportsCar sc = new SportsCar(lc);
         sc.setDrivingModes(4);
         sc.setPeakTorqueMods(2);
